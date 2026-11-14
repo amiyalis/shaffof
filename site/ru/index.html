@@ -64,12 +64,12 @@
 <div class="compare rv" id="compare">
 <article class="card report" aria-label="Обычный отчёт">
 <div class="report-top"><h3>Обычный отчёт</h3><span class="chip">Пример</span></div>
-<div class="report-rows"><div class="report-row" data-id="K-0002"><span>Пожертвование</span><span class="amt">1 200 000</span></div><div class="report-row" data-id="C-0001"><span>Продуктовые наборы</span><span class="amt">640 000</span></div><div class="report-row" data-id="C-0002"><span>Лекарства</span><span class="amt">410 000</span></div></div>
+<div class="report-rows"><div class="report-row" data-id="K-0002"><span>Пожертвование</span><span class="amt">1 200 000</span></div><div class="report-row" data-id="C-0001"><span>Продуктовые наборы</span><span class="amt">640 000</span></div><div class="report-row" data-id="C-0002"><span>Лекарства</span><span class="amt">410 000</span></div></div>
 <p class="report-foot" id="plain-state" aria-live="polite">Обычный PDF или таблица</p>
 </article>
 <article class="card report" aria-label="Отчёт Shaffof">
 <div class="report-top"><h3>Отчёт Shaffof</h3><span class="chip">Пример</span></div>
-<div class="report-rows"><div class="report-row" data-id="K-0002"><span>Пожертвование</span><span class="amt">1 200 000</span></div><div class="report-row" data-id="C-0001"><span>Продуктовые наборы</span><span class="amt">640 000</span></div><div class="report-row" data-id="C-0002"><span>Лекарства</span><span class="amt">410 000</span></div></div>
+<div class="report-rows"><div class="report-row" data-id="K-0002"><span>Пожертвование</span><span class="amt">1 200 000</span></div><div class="report-row" data-id="C-0001"><span>Продуктовые наборы</span><span class="amt">640 000</span></div><div class="report-row" data-id="C-0002"><span>Лекарства</span><span class="amt">410 000</span></div></div>
 <div class="roots"><p class="root-line"><b>опубликован</b> <span id="sh-pub">…</span></p><p class="root-line"><b>сейчас</b> <span id="sh-root">…</span></p></div>
 <p class="report-foot" aria-live="polite"><span class="chip chip-good" id="sh-state">Совпадает с опубликованным корнем</span></p>
 </article>
@@ -100,76 +100,3 @@
 <tbody id="ledger-rows">
 <tr><td class="id">K-0001</td><td class="cat"><span class="dir dir-in" aria-hidden="true">+</span><span class="sr-only">приход: </span><span class="cat-name">Пожертвование</span><small>2026-10-02</small></td><td><input class="amount" type="text" inputmode="numeric" autocomplete="off" value="250000" aria-label="K-0001, сумма, сум"></td></tr>
 <tr><td class="id">K-0002</td><td class="cat"><span class="dir dir-in" aria-hidden="true">+</span><span class="sr-only">приход: </span><span class="cat-name">Пожертвование</span><small>2026-10-05</small></td><td><input class="amount" type="text" inputmode="numeric" autocomplete="off" value="1200000" aria-label="K-0002, сумма, сум"></td></tr>
-<tr><td class="id">C-0001</td><td class="cat"><span class="dir dir-out" aria-hidden="true">−</span><span class="sr-only">расход: </span><span class="cat-name">Продуктовые наборы</span><small>2026-10-08</small></td><td><input class="amount" type="text" inputmode="numeric" autocomplete="off" value="640000" aria-label="C-0001, сумма, сум"></td></tr>
-<tr><td class="id">K-0003</td><td class="cat"><span class="dir dir-in" aria-hidden="true">+</span><span class="sr-only">приход: </span><span class="cat-name">Пожертвование</span><small>2026-10-12</small></td><td><input class="amount" type="text" inputmode="numeric" autocomplete="off" value="75000" aria-label="K-0003, сумма, сум"></td></tr>
-<tr><td class="id">C-0002</td><td class="cat"><span class="dir dir-out" aria-hidden="true">−</span><span class="sr-only">расход: </span><span class="cat-name">Лекарства</span><small>2026-10-15</small></td><td><input class="amount" type="text" inputmode="numeric" autocomplete="off" value="410000" aria-label="C-0002, сумма, сум"></td></tr>
-<tr><td class="id">K-0004</td><td class="cat"><span class="dir dir-in" aria-hidden="true">+</span><span class="sr-only">приход: </span><span class="cat-name">Пожертвование</span><small>2026-10-19</small></td><td><input class="amount" type="text" inputmode="numeric" autocomplete="off" value="500000" aria-label="K-0004, сумма, сум"></td></tr>
-<tr><td class="id">C-0003</td><td class="cat"><span class="dir dir-out" aria-hidden="true">−</span><span class="sr-only">расход: </span><span class="cat-name">Школьные принадлежности</span><small>2026-10-24</small></td><td><input class="amount" type="text" inputmode="numeric" autocomplete="off" value="330000" aria-label="C-0003, сумма, сум"></td></tr>
-<tr><td class="id">C-0004</td><td class="cat"><span class="dir dir-out" aria-hidden="true">−</span><span class="sr-only">расход: </span><span class="cat-name">Комиссия банка</span><small>2026-10-31</small></td><td><input class="amount" type="text" inputmode="numeric" autocomplete="off" value="4500" aria-label="C-0004, сумма, сум"></td></tr>
-</tbody>
-</table>
-<div class="panel-actions"><button class="btn btn-ghost btn-sm" id="reset" type="button">Вернуть как было</button></div>
-</div>
-<div class="card panel">
-<div class="panel-h"><h3>Дерево Меркла</h3><small>в стиле RFC 9162, SHA-256</small></div>
-<div class="tree-wrap" tabindex="0" role="region" aria-label="Дерево Меркла"><svg class="tree" id="tree" viewBox="0 0 640 290" aria-hidden="true"></svg></div>
-<div class="roots">
-<p class="root-line"><b>Опубликованный корень</b> <span class="mono" id="root-pub">…</span></p>
-<p class="root-line"><b>Текущий корень</b> <span class="mono" id="root-now">…</span></p>
-</div>
-<div class="status" id="demo-status" aria-live="polite"></div>
-<div class="proof">
-<h3>Есть ли моё пожертвование в отчёте?</h3>
-<div class="proof-form">
-<label class="field">Номер квитанции<select class="select" id="receipt"><option value="0">K-0001</option><option value="1">K-0002</option><option value="3">K-0003</option><option value="5">K-0004</option></select></label>
-<button class="btn btn-primary btn-sm" id="check" type="button">Проверить доказательство</button>
-</div>
-<div id="proof-result" aria-live="polite"></div>
-<ol class="proof-steps" id="proof-steps"></ol>
-</div>
-</div>
-</div>
-<p class="demo-note">Упрощённый пример: в настоящем учёте двойная запись, хеши документов и ежемесячная печать. Все названия и суммы вымышлены.</p></div>
-</section>
-
-<section class="sec" id="zakat" aria-labelledby="zakat-h">
-<div class="wrap"><div class="sec-head rv"><span class="tag">04 · Закят</span><h2 id="zakat-h">Закят: методы рядом, у каждого — источник.</h2><div class="row"><span class="chip">Скоро, после проверки учёными</span></div><p class="lead">Калькулятор не выносит решений: он показывает метод каждого мазхаба с источником. Мы не выпустим его, пока квалифицированные учёные не проверят его письменно.</p></div>
-<div class="card zakat rv" role="group" aria-label="Макет калькулятора">
-<div class="zakat-grid">
-<div><div class="zk-inputs"><div class="zk-input"><span>Наличные и счета</span><span>—</span></div><div class="zk-input"><span>Золото и серебро</span><span>—</span></div><div class="zk-input"><span>Товары для торговли</span><span>—</span></div><div class="zk-input"><span>Долги</span><span>—</span></div></div>
-<p class="zk-nisab">Нисаб: цена золота или серебра будет показана с датой и источником.</p></div>
-<div class="zk-methods"><div class="zk-m"><h3>Ханафитский</h3><div class="zk-bar" aria-hidden="true"><i></i></div><span class="zk-val">—</span><p>Источник: на проверке</p></div><div class="zk-m"><h3>Шафиитский</h3><div class="zk-bar" aria-hidden="true"><i></i></div><span class="zk-val">—</span><p>Источник: на проверке</p></div><div class="zk-m"><h3>Маликитский</h3><div class="zk-bar" aria-hidden="true"><i></i></div><span class="zk-val">—</span><p>Источник: на проверке</p></div><div class="zk-m"><h3>Ханбалитский</h3><div class="zk-bar" aria-hidden="true"><i></i></div><span class="zk-val">—</span><p>Источник: на проверке</p></div></div>
-</div>
-<p class="zk-lock"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2.5"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5M12 14.5v2.5"/></svg><span>Расчёт остаётся в вашем браузере, ничего не сохраняется. Это макет: цифры намеренно не показаны.</span></p>
-</div></div>
-</section>
-
-<section class="sec" id="who" aria-labelledby="who-h">
-<div class="wrap"><div class="sec-head rv"><span class="tag">05 · Для кого</span><h2 id="who-h">Для тех, кто хочет подтверждать доверие доказательством.</h2></div>
-<div class="who rv"><div class="card who-t"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 20 24 9l16 11"/><path d="M11 20v17h26V20"/><path d="M8 40h32M19 37V27h10v10"/><circle cx="24" cy="19.5" r="2.5"/></svg><h3>Благотворительные фонды</h3><p>Опубликуйте отчёт и запечатайте его корень. Не просите доверия — дайте доказательство.</p></div><div class="card who-t"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10 40V24c0-8 6-13 14-16 8 3 14 8 14 16v16"/><path d="M18 40V29a6 6 0 0 1 12 0v11M6 40h36M24 8V4"/></svg><h3>Благотворительные комитеты мечетей и махалли</h3><p>Небольшой учёт и простая страница: приход, расход и ежемесячная печать.</p></div><div class="card who-t"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M12 6h24v36l-4-3-4 3-4-3-4 3-4-3-4 3Z"/><path d="M18 15h12M18 21h12M18 27h7"/><path d="m27 31 2.5 2.5L34 29"/></svg><h3>Жертвователи</h3><p>Найдите свою запись по номеру квитанции. Ваше имя нигде не появляется.</p></div></div></div>
-</section>
-
-<section class="sec" id="principles" aria-labelledby="principles-h">
-<div class="wrap"><div class="sec-head rv"><span class="tag">06 · Принципы</span><h2 id="principles-h">Сначала о том, чего мы делать не будем.</h2></div>
-<div class="principles rv"><div class="pr"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M9 9.5h4.5a2 2 0 0 1 0 4H10.5a2 2 0 0 0 0 4H15M12 7.5v1.8M12 17.5v-1.8M5 19 19 5"/></svg><h3>Не касаемся денег</h3><p>Shaffof не собирает, не хранит и не переводит средства. Платежи идут через банковский счёт фонда.</p></div><div class="pr"><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="7" rx="7" ry="3"/><path d="M5 7v5c0 1.7 3.1 3 7 3s7-1.3 7-3V7M5 12v5c0 1.7 3.1 3 7 3s7-1.3 7-3v-5M4 21 20 3"/></svg><h3>Без токенов и криптоплатежей</h3><p>Печать только связывает хеш со временем. Никто не покупает криптоактивы.</p></div><div class="pr"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12s3.3-6 9-6c1.6 0 3 .5 4.2 1.1M21 12s-3.3 6-9 6c-1.6 0-3-.5-4.2-1.1"/><path d="M9.5 12a2.5 2.5 0 0 1 4.2-1.8M4 20 20 4"/></svg><h3>Приватность жертвователей</h3><p>В открытом отчёте нет имён: только дата, сумма, категория и хеш.</p></div><div class="pr"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20v-6M10 20V9M15 20v-8M20 20V5M3 21 21 3"/></svg><h3>Без рейтингов</h3><p>Ни списков жертвователей, ни таблиц «самых щедрых», ни баллов. Риск рии (показного дарения) обсуждаем с учёными.</p></div><div class="pr"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5C6.5 4 9.5 4 12 6c2.5-2 5.5-2 8-.5V19c-2.5-1.5-5.5-1.5-8 .5-2.5-2-5.5-2-8-.5Z"/><path d="M12 6v13.5"/></svg><h3>Не выносим фетв</h3><p>Методы даются с источниками. До выпуска их письменно проверяют квалифицированные учёные.</p></div><div class="pr"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg><h3>Открытый код</h3><p>Apache-2.0. Прочитайте код, прежде чем доверять кому-либо, в том числе нам.</p></div></div></div>
-</section>
-
-<section class="sec" id="roadmap" aria-labelledby="roadmap-h">
-<div class="wrap"><div class="sec-head rv"><span class="tag">07 · План</span><h2 id="roadmap-h">Где мы и куда идём.</h2><p class="lead">Shaffof использует общее с Muhr и Sanad ядро: ключи, журнал Меркла и печать. Он идёт третьим: сначала Muhr, потом Sanad.</p></div>
-<div class="road-wrap rv"><ol class="road"><li class="now"><div class="rd"><h3>Исследование и план</h3><span class="chip chip-accent">Сейчас</span></div><p>Конкуренты, источники, правовые ограничения и вопросы для учёных.</p></li><li class=""><div class="rd"><h3>Документ о методах для учёных</h3><span class="chip ">Скоро</span></div><p>Каждый метод с источником, для письменной проверки.</p></li><li class=""><div class="rd"><h3>Интервью с фондами</h3><span class="chip ">Скоро</span></div><p>Сначала выясняем, реальна ли проблема.</p></li><li class=""><div class="rd"><h3>Схема учёта и инварианты</h3><span class="chip ">Скоро</span></div><p>Только добавление, двойная запись; исправления — сторнирующей записью.</p></li></ol><ol class="road"><li class=""><div class="rd"><h3>Ежемесячный корень и печать</h3><span class="chip ">Скоро</span></div><p>OpenTimestamps через ядро Muhr.</p></li><li class=""><div class="rd"><h3>Открытый отчёт и доказательство по квитанции</h3><span class="chip ">Скоро</span></div><p>Страница inclusion proof для жертвователей.</p></li><li class=""><div class="rd"><h3>Telegram-бот</h3><span class="chip ">Скоро</span></div><p>/zakat и проверка квитанций.</p></li><li class=""><div class="rd"><h3>Калькулятор закята</h3><span class="chip ">После учёных</span></div><p>Только если проверка учёных будет положительной.</p></li></ol></div></div>
-</section>
-
-<section class="sec" id="status" aria-labelledby="status-h">
-<div class="wrap"><div class="card status-card rv"><span class="tag">08 · Статус</span><h2 id="status-h">Честно: пока ничего не выпущено.</h2><p>Эта страница — план и работающее демо. Ждём код, вопросы и критику на GitHub. Любое решение о закяте должны подтвердить квалифицированные учёные.</p>
-<div class="links"><a class="btn btn-primary" href="https://github.com/wonmortech/shaffof"><svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><path class="gh" d="M8 0C3.58 0 0 3.58 0 8a8 8 0 0 0 5.47 7.59c.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.22 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>Репозиторий на GitHub</a><a class="btn btn-ghost" href="https://github.com/wonmortech/shaffof/blob/main/docs/PLAN.md">План и исследование</a><a class="btn btn-ghost" href="https://github.com/wonmortech/shaffof/issues">Задать вопрос</a></div></div></div>
-</section>
-</main>
-<footer class="foot">
-<div class="wrap">
-<div><a class="brand" href="../ru/" aria-label="Shaffof, главная"><svg viewBox="0 0 32 32" aria-hidden="true"><path class="mark-line" d="M16 3 29 16 16 29 3 16Z"/><path class="mark-line" d="M6.8 6.8h18.4v18.4H6.8Z"/><circle class="mark-line mark-ring" cx="16" cy="16" r="6.2"/><circle class="mark-dot" cx="16" cy="16" r="2.4"/></svg><span>Shaffof</span></a><p class="disc" style="margin-top:14px">Shaffof — проект <a href="https://wonmor.io">Wonmor</a>. Лицензия: Apache-2.0.</p><p class="disc" style="margin-top:10px">Решения о закяте должны подтверждать квалифицированные учёные. Этот сайт — не юридическая и не религиозная консультация.</p></div>
-<div><h2>Проекты Wonmor</h2><ul><li><a href="https://wonmor.io">Студия Wonmor</a></li><li><a href="https://muhr.wonmor.io">Muhr — печать документов</a></li><li><a href="https://sanad.wonmor.io">Sanad — проверяемые сертификаты</a></li></ul></div>
-<div><h2>Ссылки</h2><ul><li><a href="https://github.com/wonmortech/shaffof">GitHub</a></li><li><a href="https://github.com/wonmortech/shaffof/blob/main/docs/PLAN.md">План</a></li><li><a href="https://github.com/wonmortech/shaffof/tree/main/docs/research">План и исследование</a></li><li><a href="https://github.com/wonmortech/shaffof/issues">Вопросы</a></li></ul></div>
-</div>
-</footer>
-</body>
-</html>
