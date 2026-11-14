@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2026 Wonmor and Shaffof contributors
+// SPDX-License-Identifier: Apache-2.0
+
 // Property-based tests (fast-check): Merkle proofs and amount parsing on random ledgers.
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
@@ -49,4 +52,8 @@ test('parseAmount keeps only digits, at most 12, and always a safe integer', () 
     assert.match(p.digits, /^[0-9]{0,12}$/);
     assert.ok(Number.isSafeInteger(p.value) && p.value >= 0);
   }), { numRuns: 300 });
+});
+
+test('parseAmount treats a value with no text form as empty', () => {
+  assert.deepEqual(D.parseAmount([[[{ toString: false }]]]), { digits: '', value: 0 });
 });

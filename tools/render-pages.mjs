@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2026 Wonmor and Shaffof contributors
+// SPDX-License-Identifier: Apache-2.0
+
 // Renders site/index.html, site/en/index.html and site/ru/index.html from one template and one
 // string table, so the three languages never drift. The output is plain static HTML (no build step
 // is needed to serve the site); run `node tools/render-pages.mjs` after editing strings.
@@ -301,6 +304,8 @@ function page(lang) {
   const roadHalf = (items) => `<ol class="road">${items.map(([k, h, p]) => `<li class="${k === 'now' ? 'now' : ''}"><div class="rd"><h3>${h}</h3><span class="chip ${chipKind[k]}">${t.road[k]}</span></div><p>${p}</p></li>`).join('')}</ol>`;
 
   return `<!doctype html>
+<!-- SPDX-FileCopyrightText: 2026 Wonmor and Shaffof contributors -->
+<!-- SPDX-License-Identifier: Apache-2.0 -->
 <html lang="${lang}" dir="ltr">
 <head>
 <meta charset="utf-8">
@@ -442,7 +447,7 @@ ${sec('status', `<div class="card status-card rv"><span class="tag">${t.st.tag}<
 </main>
 <footer class="foot">
 <div class="wrap">
-<div><a class="brand" href="${b}${t.path || './'}" aria-label="${t.home}">${I.mark}<span>Shaffof</span></a><p class="disc" style="margin-top:14px">${t.ft.by}</p><p class="disc" style="margin-top:10px">${t.ft.disc}</p></div>
+<div><a class="brand" href="${b}${t.path || './'}" aria-label="${t.home}">${I.mark}<span>Shaffof</span></a><p class="disc disc--by">${t.ft.by}</p><p class="disc disc--note">${t.ft.disc}</p></div>
 <div><h2>${t.ft.fam}</h2><ul><li><a href="${LINKS.wonmor}">${t.ft.wonmor}</a></li><li><a href="${LINKS.muhr}">${t.ft.muhr}</a></li><li><a href="${LINKS.sanad}">${t.ft.sanad}</a></li></ul></div>
 <div><h2>${t.ft.links}</h2><ul><li><a href="${LINKS.repo}">${t.ft.gh}</a></li><li><a href="${LINKS.docs}">${t.ft.docs}</a></li><li><a href="${LINKS.research}">${t.st.links[1]}</a></li><li><a href="${LINKS.issues}">${t.ft.issues}</a></li></ul></div>
 </div>

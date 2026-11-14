@@ -1,3 +1,5 @@
+/* SPDX-FileCopyrightText: 2026 Wonmor and Shaffof contributors
+   SPDX-License-Identifier: Apache-2.0 */
 /* Shaffof home page. Tokens first; components use tokens only. */
 
 @font-face { font-family: 'Wm Sans'; font-style: normal; font-weight: 100 900; font-display: swap;
@@ -356,6 +358,8 @@ em { font-style: normal; color: rgb(var(--accent)); }
 .foot a { color: rgb(var(--ink-2)); display: inline-block; padding: 6px 0; }
 .foot a:hover { color: rgb(var(--ink)); }
 .foot .disc { color: rgb(var(--ink-2)); max-width: 34em; }
+.foot .disc--by { margin-top: 14px; }
+.foot .disc--note { margin-top: 10px; }
 
 /* 404 */
 .nf { min-height: 100svh; display: grid; place-items: center; text-align: center; padding: 40px 16px; }
